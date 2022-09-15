@@ -62,8 +62,9 @@ export const getStaticProps = async(context) => {
         title: meetupData.title,
         image: meetupData.image,
         address: meetupData.address,
-        description: meetupData.description
+        description: meetupData.description,
       },
+      revalidate: 10,
     },
   };
 };
