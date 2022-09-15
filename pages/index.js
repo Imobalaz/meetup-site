@@ -5,7 +5,7 @@ import { MongoClient } from "mongodb";
 const HomePage = (props) => {
   return (
     <>
-      <MeetupList meetups={props.meetups} />;
+      <MeetupList meetups={props.meetups} />
       <Head>
         <title>Reacts Meetups</title>
         <meta
@@ -39,6 +39,7 @@ export const getServerSideProps = async () => {
         id: meetup._id.toString(),
       })),
     },
+
   };
 };
 

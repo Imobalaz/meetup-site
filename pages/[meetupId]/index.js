@@ -14,7 +14,7 @@ const MeetupDetails = (props) => {
     <title>{meetupData.title}</title>
     <meta title="description" content="A meetup page" />
   </Head>
-  <MeetupDetail meetupData={meetupData} />;
+  <MeetupDetail meetupData={meetupData} />
   </>
 };
 
